@@ -103,12 +103,12 @@ export default class ProductEdit extends React.Component {
     } = this.state;
 
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form onSubmit={this.handleSubmit} className="edit-form">
         <h3>{`Editing product: ${id}`}</h3>
         <table>
           <tbody>
             <tr>
-              <td>Name</td>
+              <td className="padding-right-20">Name</td>
               <td>
                 <TextInput
                   name="name"
@@ -119,9 +119,9 @@ export default class ProductEdit extends React.Component {
               </td>
             </tr>
             <tr>
-              <td>Category</td>
+              <td className="padding-right-20">Category</td>
               <td>
-                <select name="category" value={category} onChange={this.onChange}>
+                <select name="category" value={category} className="add-product-form-select" onChange={this.onChange}>
                   <option value="Shirts">Shirts</option>
                   <option value="Jeans">Jeans</option>
                   <option value="Jackets">Jackets</option>
@@ -131,7 +131,7 @@ export default class ProductEdit extends React.Component {
               </td>
             </tr>
             <tr>
-              <td>Price</td>
+              <td className="padding-right-20">Price</td>
               <td>
                 <NumInput
                   name="price"
@@ -143,7 +143,7 @@ export default class ProductEdit extends React.Component {
               </td>
             </tr>
             <tr>
-              <td>Image Url</td>
+              <td className="padding-right-20">Image Url</td>
               <td>
                 <TextInput
                   name="imageUrl"
@@ -155,7 +155,7 @@ export default class ProductEdit extends React.Component {
             </tr>
             <tr>
               <td />
-              <td><button type="submit">Submit</button></td>
+              <td><button type="submit" className="submit-button submit-button-dark">Submit</button></td>
             </tr>
           </tbody>
         </table>

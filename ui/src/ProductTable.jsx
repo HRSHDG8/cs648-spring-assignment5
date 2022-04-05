@@ -16,7 +16,7 @@ function ProductTableRow({ product, deleteProduct, index }) {
       <td>
         <Link to={`/edit/${id}`}>Edit</Link>
         {' | '}
-        <button type="button" onClick={() => { deleteProduct(index); }}>
+        <button type="button" className="small submit-button submit-button-dark small" onClick={() => { deleteProduct(index); }}>
           Delete
         </button>
       </td>

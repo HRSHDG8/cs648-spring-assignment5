@@ -36,6 +36,7 @@ export default class NumInput extends React.Component {
         {...this.props}
         type="text"
         value={value}
+        className="add-product-form-input"
         onBlur={this.onBlur}
         onChange={this.onChange}
       />

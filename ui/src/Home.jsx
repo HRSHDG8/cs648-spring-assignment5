@@ -4,8 +4,8 @@ import { NavLink } from 'react-router-dom';
 import Routes from './Routes.jsx';
 
 const NavBar = () => (
-  <nav>
-    <NavLink exact to="/">Home</NavLink>
+  <nav className="nav-bar">
+    <NavLink className="submit-button submit-button-dark" exact to="/">Home</NavLink>
   </nav>
 );
 
