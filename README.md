@@ -25,7 +25,8 @@ Go to UI folder and run `npm run watch` to make babel watch for changes in files
 
     1) open mongo shell
     2) navigate to api directory
-    3) run load('scripts/init.mongo.js') or `mongosh "mongodb+srv://cluster0.uimtv.mongodb.net/myFirstDatabase" --username hmac scripts/init.mongo.js`
+    3) run `mongosh "mongodb+srv://hmac:cs648@cluster0.uimtv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"` 
+    4) run load('scripts/init.mongo.js')
 
 ## Lint check
 
